@@ -26,3 +26,7 @@ def get_gender_users(data: dict) -> list:
                 'Female': 0
             })
     return res
+
+
+data = get_data.get_data('randomuser_data.json')
+print(get_gender_users(data))
