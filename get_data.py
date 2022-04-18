@@ -1,6 +1,7 @@
 import json
 
-def get_data(filename:str) -> dict:
+
+def get_data(filename: str) -> dict:
     """
     You are given a filename. Read the JSON data from the file and return the dictionary.
 
@@ -9,3 +10,4 @@ def get_data(filename:str) -> dict:
     Returns:
         dict: JSON data
     """
+    return 0
