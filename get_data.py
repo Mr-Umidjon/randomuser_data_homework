@@ -10,4 +10,8 @@ def get_data(filename: str) -> dict:
     Returns:
         dict: JSON data
     """
-    return 0
+    data = open(filename, encoding='utf-8')
+    return json.load(data)
+
+
+print(get_data("randomuser_data.json"))
