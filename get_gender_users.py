@@ -1,6 +1,7 @@
 import get_data
 
-def get_gender_users(data:dict) -> list:
+
+def get_gender_users(data: dict) -> list:
     """
     Take the gender of the users and return the list.
     
@@ -13,3 +14,8 @@ def get_gender_users(data:dict) -> list:
     Returns:
         list: users get gender list
     """
+
+    res = []
+    for i in data['results']:
+        res.append(i['gender'])
+    return res
