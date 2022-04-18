@@ -15,7 +15,11 @@ def get_users_data(data: dict) -> list:
     """
     res = []
     for r in data['results']:
-        info = {"first_name": r['name']['first'], "last_name": r['name']['last'], "phone_number": r['phone']}
+        info = {
+            "first_name": r['name']['first'],
+            "last_name": r['name']['last'],
+            "phone_number": r['phone']
+        }
         res.append(info)
 
     return res
