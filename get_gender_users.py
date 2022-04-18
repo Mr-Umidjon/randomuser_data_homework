@@ -19,10 +19,10 @@ def get_gender_users(data: dict) -> list:
     for i in data['results']:
         if i['gender'] == 'male':
             res.append({
-                'male': 1
+                'Male': 1
             })
         else:
             res.append({
-                'female': 0
+                'Female': 0
             })
     return res
